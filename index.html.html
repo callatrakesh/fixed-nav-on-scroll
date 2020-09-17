@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+    <title>Fixed Navbar on scroll</title>
+    <style>
+      *{box-sizing: border-box;}
+      header,footer,aside,nav,menu,article,footer,section{display: block;}
+      body{background:#fff; margin: 0; padding: 0; font-size: 16px; color:#333; min-height: 100%}
+      .container{max-width: 1200px; padding-left: 15px; padding-right: 15px; margin-left: auto; margin-right: auto;}
+      .fo:after,.fo:before{content:''; display: table;}
+      .fo:after{clear: both;}  
+      .text-center{text-align: center;}    
+      .header{position: relative;}
+      .navbar{position: absolute; top:20px; left: 0; width: 100%; z-index: 1; transition: all 0.3s ease}
+      .navbar.fixed{background:#fff; position: fixed; top: 0; left: 0; width: 100%; z-index: 11; box-shadow: 1px 1px 5px rgba(0,0,0,0.12);}
+      .navbar .logo{display: block; float: left; font-size: 20px; font-weight: bold; text-transform: uppercase; color:#fff; text-decoration: none; padding: 15px 0; transition: all 0.3s ease}
+      .navbar.fixed .logo{color:#f7ac01}
+      .navbar .nav-menu{margin: 0; padding: 0; list-style: none; float: right;}
+       .navbar .nav-menu > li{display: inline-block; margin-right: 20px; vertical-align: middle;}
+       .navbar .nav-menu > li:last-child{margin-right: 0px;}
+       .navbar .nav-menu > li > a{display: block; color:#fff; padding: 15px 0; text-decoration: none; text-transform: uppercase; line-height: 23px; transition:all 0.3s ease}
+       .navbar.fixed .nav-menu > li > a{color:#666;}
+      .site-banner{display: flex; align-items: center; justify-content: center; min-height: 767px; background: url(header-bg.jpg) no-repeat center center; background-size: cover; background-attachment: fixed;}
+      .site-banner h1{font-size: 50px; font-weight: bold; color:#fff; text-align: center; margin: 0 0 10px 0}
+      .site-banner p{font-size:30px; color:#000; margin: 0 0 30px 0;}
+      .site-banner a{display: inline-block; background:#fff; border-radius:25px; padding: 10px 30px; font-size: 16px; font-weight: bold; color:#f7ac01; text-decoration: none; text-transform: uppercase; transition: all 0.3s ease;}
+      .site-banner a:hover{background:#f7ac01; color:#fff}
+      .body-sec{padding:50px 0;}
+      .body-sec .sec-title{font-size: 30px; font-weight: bold; color:#000; margin: 0 0 20px 0;}
+      .body-sec p{font-size: 16px; color:#666; margin: 0 0 10px 0; line-height: 20px;}
+      .footer{padding: 30px 0; text-align: center; border-top:1px dashed #ccc; color:#999}
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="container fo">
+          <a href="#" class="logo">Site Name</a>
+          <ul class="nav-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <section class="site-banner">
+        <div class="container text-center">
+          <h1>Best Place to Visit in India</h1>
+          <p>60 Places You Need to Visit In India With Your Best Friend!</p>
+          <a href="#">Know More</a>
+        </div>
+      </section>
+    </header>
+    
+    <section class="body-sec">
+      <div class="container">
+        <h2 class="sec-title">Section Title</h2>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
+        <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way. On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their projects again and again. And if she hasn’t been rewritten, then they are still using her.</p>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
+        <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way. On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their projects again and again. And if she hasn’t been rewritten, then they are still using her. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+        <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way. On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their projects again and again. And if she hasn’t been rewritten, then they are still using her. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It</p>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        Copyright &copy; 2020
+      </div>  
+    </footer>
+    <!-- Optional JavaScript -->    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+    <script>
+      $(document).ready(function(){
+       var nav_top = $('.navbar').offset().top; 
+       $(window).scroll(function(){  
+          if ($(window).scrollTop() >= nav_top) {
+            $('.navbar').addClass('fixed');
+          } else {
+            $('.navbar').removeClass('fixed');
+          }
+        });
+      })
+    </script>
+  </body>
+</html>
